@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EZCameraShake;
 
 public class EnemyController : MonoBehaviour
 {
@@ -11,6 +12,16 @@ public class EnemyController : MonoBehaviour
     private Rigidbody2D rb;
     private bool isFacingLeft = false;
     private Vector3 localScale;
+    public float health;
+    public float flashTime;
+    Color originalColor;
+    Color collideColor;
+
+    public float magnitude;
+    public float roughness;
+    public float fadeInTime;
+    public float fadeOutTime;
+
 
 
     // Start is called before the first frame update
@@ -20,6 +31,8 @@ public class EnemyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         dirX = 1f;
         speed = 3f;
+        originalColor = GetComponent<Renderer>().material.color;
+        collideColor = Color.blue;
     }
 
     // Update is called once per frame
@@ -27,6 +40,18 @@ public class EnemyController : MonoBehaviour
     {
         // moves the enemmies
         rb.velocity = new Vector2(dirX * speed, rb.velocity.y);
+
+        if (health <= 0)
+        {
+            // create the pick ups when the enemy is destroyed 
+            Instantiate(Pickup, transform.position, transform.rotation);
+            Instantiate(Pickup, transform.position, transform.rotation);
+            Instantiate(Pickup, transform.position, transform.rotation);
+            Instantiate(Pickup, transform.position, transform.rotation);
+            CameraShaker.Instance.ShakeOnce(magnitude, roughness, fadeInTime, fadeOutTime);
+            Destroy(gameObject);
+        }
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -35,20 +60,27 @@ public class EnemyController : MonoBehaviour
 
         if (collision.gameObject.tag == "Bullet")
         {
-            // create the pick ups when the enemy is destroyed 
-            Instantiate(Pickup, transform.position, transform.rotation);
-            Instantiate(Pickup, transform.position, transform.rotation);
-            Instantiate(Pickup, transform.position, transform.rotation);
-            Instantiate(Pickup, transform.position, transform.rotation);
+            StartCoroutine(colorChange());
 
             // Destroy the Turret when it has been hit by a bullet
-            Destroy(gameObject);
+            health -= 30;
+
+            
+            
+
+            
 
         }
 
 
     }
 
+    IEnumerator colorChange()
+    {
+        GetComponent<Renderer>().material.color = collideColor;
+        yield return new WaitForSeconds(flashTime);
+        GetComponent<Renderer>().material.color = originalColor;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
 

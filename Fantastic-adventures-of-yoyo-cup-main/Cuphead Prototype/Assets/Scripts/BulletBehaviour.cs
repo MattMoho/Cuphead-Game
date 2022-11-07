@@ -11,7 +11,7 @@ public class BulletBehaviour : MonoBehaviour
 
 
     public float speed;
-    private float destroyTime = 3f;
+    private float destroyTime = 1f;
 
     private void Start()
     {
@@ -27,6 +27,7 @@ public class BulletBehaviour : MonoBehaviour
     {
         // Moves the bullet along the screen
         // transform.position += transform.right * Time.deltaTime * speed;
+        Destroy(gameObject, destroyTime);
        
     }
 

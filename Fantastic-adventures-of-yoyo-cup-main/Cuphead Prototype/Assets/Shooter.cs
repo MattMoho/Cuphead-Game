@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EZCameraShake;
 
 public class Shooter : MonoBehaviour
 {
@@ -11,8 +12,14 @@ public class Shooter : MonoBehaviour
     public Transform bulletTransform;
     public bool canFire;
     private float timer;
+    public GameObject smoke;
 
     public float timeBetweenFiring;
+
+    public float magnitude;
+    public float roughness;
+    public float fadeInTime;
+    public float fadeOutTime;
 
 
 
@@ -46,6 +53,8 @@ public class Shooter : MonoBehaviour
         {
             canFire = false;
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
+            Instantiate(smoke, bulletTransform.position, Quaternion.identity);
+            CameraShaker.Instance.ShakeOnce(magnitude, roughness, fadeInTime, fadeOutTime);
         }
     }
 }
