@@ -22,6 +22,10 @@ namespace TarodevController {
 
         public ParticleSystem Dust;
 
+        public Transform SpawnPoint;
+
+        public float cameraMove;
+
 
 
         private Vector3 _lastPosition;
@@ -69,7 +73,7 @@ namespace TarodevController {
 
             if (mainCamera)
             {
-                 mainCamera.transform.position = new Vector3(t.position.x, t.position.y, (cameraPos.z - 10));
+                 mainCamera.transform.position = new Vector3(t.position.x, t.position.y + cameraMove, (cameraPos.z - 10));
             }
         }
 
