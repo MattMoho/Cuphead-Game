@@ -89,5 +89,10 @@ public class EnemyController : MonoBehaviour
             // if the enemy hits an invisable wall change the direction of it
             dirX *= -1;
         }
+
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }

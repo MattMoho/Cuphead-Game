@@ -301,6 +301,7 @@ namespace TarodevController {
                 transform.position += move;
                 return;
             }
+            
 
             // otherwise increment away from current pos; see what closest position we can move to
             var positionToMoveTo = transform.position;
@@ -331,5 +332,9 @@ namespace TarodevController {
         void CreateDust(){
             Dust.Play();
         }
+
+
+
     }
+
 }
