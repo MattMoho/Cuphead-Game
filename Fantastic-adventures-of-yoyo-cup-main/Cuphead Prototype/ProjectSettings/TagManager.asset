@@ -9,6 +9,7 @@ TagManager:
   - PlatWall
   - MovingPlat
   - Ground
+  - KillZone
   layers:
   - Default
   - TransparentFX

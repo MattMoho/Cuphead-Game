@@ -22,6 +22,9 @@ public class EnemyController : MonoBehaviour
     public float fadeInTime;
     public float fadeOutTime;
 
+    public Transform SpawnPoint;
+    public killPlayer killPlayer;
+
 
 
     // Start is called before the first frame update
@@ -92,7 +95,7 @@ public class EnemyController : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
-            Destroy(collision.gameObject);
+            collision.transform.position = SpawnPoint.position;
         }
     }
 }
