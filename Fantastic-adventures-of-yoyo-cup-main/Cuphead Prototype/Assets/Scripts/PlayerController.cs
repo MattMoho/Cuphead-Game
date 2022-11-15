@@ -26,6 +26,8 @@ namespace TarodevController {
 
         public float cameraMove;
 
+        private Animator animator;
+
 
 
         private Vector3 _lastPosition;
@@ -43,12 +45,14 @@ namespace TarodevController {
         void Awake() => Invoke(nameof(Activate), 0.5f);
         void Activate() =>  _active = true;
 
-        public void Start(){
-        t = transform;
-                    if (mainCamera)
+        public void Start()
         {
-            cameraPos = mainCamera.transform.position;
-        }
+            t = transform;
+            if (mainCamera)
+            {
+                cameraPos = mainCamera.transform.position;
+            }
+            animator = GetComponent<Animator>();
       
         }
         
@@ -73,7 +77,7 @@ namespace TarodevController {
 
             if (mainCamera)
             {
-                 mainCamera.transform.position = new Vector3(t.position.x, t.position.y + cameraMove, (cameraPos.z - 10));
+                 mainCamera.transform.position = new Vector3(t.position.x, 0, (cameraPos.z - 10));
             }
         }
 
@@ -116,6 +120,7 @@ namespace TarodevController {
             var groundedCheck = RunDetection(_raysDown);
             if (_colDown && !groundedCheck) _timeLeftGrounded = Time.time; // Only trigger when first leaving
             else if (!_colDown && groundedCheck) {
+                animator.SetBool("JumpPressed", false);
                 _coyoteUsable = true; // Only trigger when first touching
                 LandingThisFrame = true;
             }
@@ -186,6 +191,8 @@ namespace TarodevController {
 
         private void CalculateWalk() {
             if (Input.X != 0) {
+
+                animator.SetBool("Moving", true);
                 // Set horizontal move speed
                 _currentHorizontalSpeed += Input.X * _acceleration * Time.deltaTime;
 
@@ -197,6 +204,7 @@ namespace TarodevController {
                 _currentHorizontalSpeed += apexBonus * Time.deltaTime;
             }
             else {
+                animator.SetBool("Moving", false);
                 // No input. Let's slow the character down
                 _currentHorizontalSpeed = Mathf.MoveTowards(_currentHorizontalSpeed, 0, _deAcceleration * Time.deltaTime);
             }
@@ -263,6 +271,7 @@ namespace TarodevController {
         private void CalculateJump() {
             // Jump if: grounded or within coyote threshold || sufficient jump buffer
             if (Input.JumpDown && CanUseCoyote || HasBufferedJump) {
+                animator.SetBool("JumpPressed", true);
                 CreateDust();
                 _currentVerticalSpeed = _jumpHeight;
                 _endedJumpEarly = false;
@@ -271,6 +280,7 @@ namespace TarodevController {
                 JumpingThisFrame = true;
             }
             else {
+                
                 JumpingThisFrame = false;
             }
 

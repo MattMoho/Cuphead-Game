@@ -1,0 +1,552 @@
+fileFormatVersion: 2
+guid: 1d2da9f51320b22469173a91bac228c4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1170
+        width: 308
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9526830539ee282429572ba1eed4f158
+      internalID: -276461454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1168
+        width: 296
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3142f08b5b94cc4a91e18d48d79283e
+      internalID: -670777627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1173
+        width: 293
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d167b54c24f44b846b83f3f1f24326bd
+      internalID: -345106662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1163
+        width: 307
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79cad268c54b1344caee73eaec7418fd
+      internalID: 393830325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 1175
+        width: 325
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e951c0e5e51f0e84b8d00c883faeb507
+      internalID: -438168540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 1160
+        width: 291
+        height: 529
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1510799c133ee46ac0133f26583015
+      internalID: 1504319654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2138
+        y: 1173
+        width: 325
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f0a0a9ee51ad54fb1a75cad6305ddb
+      internalID: 433016650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 624
+        width: 273
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233e3c1188534f64fb37963ad29468e3
+      internalID: -2021658676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 629
+        width: 305
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8dd10679c533834b977c5038f26a9d0
+      internalID: 624512327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 632
+        width: 313
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab32df5e71697b489a94e5d52cd79a7
+      internalID: 2099332353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 639
+        width: 306
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a5537830f742a439b6e40ac47c7720
+      internalID: 180918744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 639
+        width: 331
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3875df2675ab5084895d9658ae6da717
+      internalID: 1079114978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 629
+        width: 345
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1b6ba64a0808841add05e7ad03197f
+      internalID: -1553000530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2334
+        y: 644
+        width: 295
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b6ab6e1504c3445b80ec3e0271139c
+      internalID: 798835835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 66
+        width: 313
+        height: 528
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5da9789654f811468f012c28afd2f8b
+      internalID: 604171849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 78
+        width: 325
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca6a7eabfffa7244b089b20dd47921c
+      internalID: -145567524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 88
+        width: 317
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4dd325174baf54580265cfc9cdf3b0
+      internalID: 1356206705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 75
+        width: 336
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef593267ef888294fa814ca95eb50e1b
+      internalID: 450612942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoyo_ilde_sprit_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 63
+        width: 333
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1daaefef98aff984a9accdd930d79351
+      internalID: 2123952261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      yoyo_ilde_sprit_sheet_3: 393830325
+      yoyo_ilde_sprit_sheet_13: 798835835
+      yoyo_ilde_sprit_sheet_6: 433016650
+      yoyo_ilde_sprit_sheet_10: 180918744
+      yoyo_ilde_sprit_sheet_16: 1356206705
+      yoyo_ilde_sprit_sheet_5: 1504319654
+      yoyo_ilde_sprit_sheet_11: 1079114978
+      yoyo_ilde_sprit_sheet_8: 624512327
+      yoyo_ilde_sprit_sheet_9: 2099332353
+      yoyo_ilde_sprit_sheet_4: -438168540
+      yoyo_ilde_sprit_sheet_12: -1553000530
+      yoyo_ilde_sprit_sheet_15: -145567524
+      yoyo_ilde_sprit_sheet_2: -345106662
+      yoyo_ilde_sprit_sheet_1: -670777627
+      yoyo_ilde_sprit_sheet_18: 2123952261
+      yoyo_ilde_sprit_sheet_0: -276461454
+      yoyo_ilde_sprit_sheet_17: 450612942
+      yoyo_ilde_sprit_sheet_14: 604171849
+      yoyo_ilde_sprit_sheet_7: -2021658676
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

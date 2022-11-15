@@ -30,24 +30,32 @@ public class VerticalMover : MonoBehaviour
             // if the enemy hits an invisable wall change the direction of it
             dirY *= -1;
         }
-        //if (collision.gameObject.tag == "Player")
-        //{
-        //    collision.transform.SetParent(transform);
-        //}
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision1)
-    {
-
-
-        if (collision1.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            collision1.transform.SetParent(transform);
-            print("h");
+            collision.transform.SetParent(transform);
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    //private void OnCollisionEnter2D(Collision2D collision1)
+    //{
+
+
+    //    if (collision1.gameObject.tag == "Player")
+    //    {
+    //        collision1.transform.SetParent(transform);
+    //        print("h");
+    //    }
+    //}
+
+    //private void OnCollisionExit2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.tag == "Player")
+    //    {
+    //        collision.transform.SetParent(null);
+    //    }
+    //}
+
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
